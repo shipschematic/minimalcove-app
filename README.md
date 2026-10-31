@@ -40,8 +40,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/shipblueprint/FocusBoard.git
-cd FocusBoard/app
+git clone https://github.com/shipblueprint/focusboard.git
+cd focusboard/app
 
 # Install dependencies
 flutter pub get
