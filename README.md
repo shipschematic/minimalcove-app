@@ -18,8 +18,6 @@
 | **📊 Eisenhower Matrix** | Prioritise tasks by urgency and importance (Eisenhower method). |
 | **📈 Analytics** | Visual insights into your productivity trends and task completion. |
 | **✅ Habit Tracker** | Track daily habits and build consistent routines. |
-| **🌙 Dark / Light Theme** | Full theme support — light, dark, and customisable accent colours. |
-| **🌍 Localisation** | Built with `intl` — ready for multiple languages. |
 
 ## 📸 Screenshots
 
