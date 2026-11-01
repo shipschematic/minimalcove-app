@@ -25,9 +25,9 @@
 
 | Kanban Board | Eisenhower Matrix |
 |---|---|
-| ![Kanban](assets/screenshots/kanban.jpg) | ![Eisenhower Matrix](assets/screenshots/eisenhower.jpg) |
+| ![Kanban](assets/screenshots/kanban.png) | ![Eisenhower Matrix](assets/screenshots/eisenhower.png) |
 | **Analytics Dashboard** | **Habit Tracker** |
-| ![Analytics](assets/screenshots/analytics.jpg) | ![Habits](assets/screenshots/habits.jpg) |
+| ![Analytics](assets/screenshots/analytics.png) | ![Habits](assets/screenshots/habits.png) |
 
 ## 🚀 Getting Started
 
