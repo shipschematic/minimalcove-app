@@ -26,6 +26,7 @@ Minimal Cove is a Flutter productivity app combining Kanban boards and the Eisen
 ## Documentation
 
 - [Installation](installation.md) — prerequisites, setup, build, and run
+- [CI and Releases](ci.md) — GitHub Actions, required secret, signing gaps
 - [Architecture & Project Map](PROJECT_MAP.md) — codebase map, seams, persistence, gaps
 - [Do First → Kanban Spec](SPEC-do-first-to-kanban.md) — transfer behavior spec
 - [Changelog](changelog.md) — notable releases and changes
