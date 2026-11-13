@@ -159,7 +159,6 @@ class AppTheme {
 
     /// Other Colors
     splashColor: Colors.white.withAlpha(100),
-    indicatorColor: Color(0xffeeeeee),
     highlightColor: Color(0xffeeeeee),
   );
 
@@ -265,7 +264,6 @@ class AppTheme {
     ),
 
     ///Other Color
-    indicatorColor: Colors.white,
     disabledColor: Color(0xffa3a3a3),
     highlightColor: Color(0xff47484b),
     splashColor: Colors.white.withAlpha(100),
