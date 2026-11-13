@@ -1,6 +1,6 @@
 // ignore_for_file: curly_braces_in_flow_control_structures
 
-import 'package:focusboard/helpers/widgets/my_constant.dart';
+import 'package:minimalcove_app/helpers/widgets/my_constant.dart';
 import 'package:flutter/material.dart';
 
 enum MyButtonType { elevated, outlined, text }

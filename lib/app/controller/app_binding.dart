@@ -1,7 +1,7 @@
-import 'package:focusboard/app/controller/analytics_controller.dart';
-import 'package:focusboard/app/controller/eisenhower_controller.dart';
-import 'package:focusboard/app/controller/habit_controller.dart';
-import 'package:focusboard/app/controller/kanban_controller.dart';
+import 'package:minimalcove_app/app/controller/analytics_controller.dart';
+import 'package:minimalcove_app/app/controller/eisenhower_controller.dart';
+import 'package:minimalcove_app/app/controller/habit_controller.dart';
+import 'package:minimalcove_app/app/controller/kanban_controller.dart';
 import 'package:get/get.dart';
 
 /// Bindings that wire up all controllers in the [AppLayout] subtree.

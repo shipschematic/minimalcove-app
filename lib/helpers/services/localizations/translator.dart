@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:developer';
 import 'package:flutter/services.dart';
 import 'package:get/get_utils/src/extensions/string_extensions.dart';
-import 'package:focusboard/helpers/services/localizations/language.dart';
+import 'package:minimalcove_app/helpers/services/localizations/language.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Translator {

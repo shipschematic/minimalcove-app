@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:focusboard/app/controller/eisenhower_controller.dart';
-import 'package:focusboard/app/model/eisenhower_config.dart';
-import 'package:focusboard/app/model/eisenhower_task_model.dart';
-import 'package:focusboard/app/model/task_validator.dart';
-import 'package:focusboard/helpers/theme/app_theme.dart';
-import 'package:focusboard/helpers/widgets/my_container.dart';
-import 'package:focusboard/helpers/widgets/my_text.dart';
+import 'package:minimalcove_app/app/controller/eisenhower_controller.dart';
+import 'package:minimalcove_app/app/model/eisenhower_config.dart';
+import 'package:minimalcove_app/app/model/eisenhower_task_model.dart';
+import 'package:minimalcove_app/app/model/task_validator.dart';
+import 'package:minimalcove_app/helpers/theme/app_theme.dart';
+import 'package:minimalcove_app/helpers/widgets/my_container.dart';
+import 'package:minimalcove_app/helpers/widgets/my_text.dart';
 import 'package:get/get.dart';
 
 // ponytail: AnimatedContainer + elevation + delay to match Kanban DnD feel

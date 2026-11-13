@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
-import 'package:focusboard/app/controller/kanban_controller.dart';
-import 'package:focusboard/app/data/task_storage.dart';
-import 'package:focusboard/app/model/eisenhower_config.dart';
-import 'package:focusboard/app/model/eisenhower_task_model.dart';
-import 'package:focusboard/app/model/task_model.dart';
-import 'package:focusboard/app/model/task_validator.dart';
+import 'package:minimalcove_app/app/controller/kanban_controller.dart';
+import 'package:minimalcove_app/app/data/task_storage.dart';
+import 'package:minimalcove_app/app/model/eisenhower_config.dart';
+import 'package:minimalcove_app/app/model/eisenhower_task_model.dart';
+import 'package:minimalcove_app/app/model/task_model.dart';
+import 'package:minimalcove_app/app/model/task_validator.dart';
 import 'package:get/get.dart';
 
 /// Reactive controller for the Eisenhower Matrix.

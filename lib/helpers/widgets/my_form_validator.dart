@@ -1,4 +1,4 @@
-import 'package:focusboard/helpers/widgets/my_field_validator.dart';
+import 'package:minimalcove_app/helpers/widgets/my_field_validator.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_utils/get_utils.dart';
 

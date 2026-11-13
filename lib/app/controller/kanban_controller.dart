@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
-import 'package:focusboard/app/data/task_storage.dart';
-import 'package:focusboard/app/model/task_model.dart';
-import 'package:focusboard/app/model/task_validator.dart';
+import 'package:minimalcove_app/app/data/task_storage.dart';
+import 'package:minimalcove_app/app/model/task_model.dart';
+import 'package:minimalcove_app/app/model/task_validator.dart';
 import 'package:get/get.dart';
 
 /// Reactive controller that owns the Kanban tasks list and its

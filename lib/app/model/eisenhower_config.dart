@@ -1,5 +1,5 @@
 import 'package:flutter/painting.dart';
-import 'package:focusboard/helpers/theme/app_theme.dart';
+import 'package:minimalcove_app/helpers/theme/app_theme.dart';
 
 /// Quadrant classification for the Eisenhower Matrix.
 enum EisenhowerQuadrant {

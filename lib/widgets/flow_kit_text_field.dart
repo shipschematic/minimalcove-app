@@ -1,5 +1,5 @@
-import 'package:focusboard/helpers/widgets/my_spacing.dart';
-import 'package:focusboard/helpers/widgets/my_text_style.dart';
+import 'package:minimalcove_app/helpers/widgets/my_spacing.dart';
+import 'package:minimalcove_app/helpers/widgets/my_text_style.dart';
 import 'package:flutter/material.dart';
 
 class FlowKitTextField extends StatelessWidget {

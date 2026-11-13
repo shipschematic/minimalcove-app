@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "FocusBoard" "\0"
+            VALUE "FileDescription", "Minimal Cove" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "FocusBoard" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2024 FocusBoard. All rights reserved." "\0"
-            VALUE "OriginalFilename", "FocusBoard.exe" "\0"
-            VALUE "ProductName", "FocusBoard" "\0"
+            VALUE "InternalName", "MinimalCove" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2024 Minimal Cove. All rights reserved." "\0"
+            VALUE "OriginalFilename", "MinimalCove.exe" "\0"
+            VALUE "ProductName", "Minimal Cove" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

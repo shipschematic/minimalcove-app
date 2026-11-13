@@ -1,5 +1,5 @@
 import 'dart:ui';
-import 'package:focusboard/helpers/services/localizations/translator.dart';
+import 'package:minimalcove_app/helpers/services/localizations/translator.dart';
 
 extension StringUtil on String {
   Color get toColor {

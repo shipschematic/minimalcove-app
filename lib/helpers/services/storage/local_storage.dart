@@ -1,4 +1,4 @@
-import 'package:focusboard/helpers/theme/theme_customizer.dart';
+import 'package:minimalcove_app/helpers/theme/theme_customizer.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// Local persistence wrapper around [SharedPreferences].

@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:focusboard/helpers/widgets/my_exception.dart';
+import 'package:minimalcove_app/helpers/widgets/my_exception.dart';
 
 class BaseException extends MyException {
   StackTrace? stackTrace;

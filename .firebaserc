@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "minimalcove"
+  },
+  "targets": {
+    "minimalcove": {
+      "hosting": {
+        "app": [
+          "minimalcove-app"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

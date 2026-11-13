@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lucide/flutter_lucide.dart';
-import 'package:focusboard/view/apps/analytics/analytics_screen.dart';
-import 'package:focusboard/view/apps/eisenhower/eisenhower_screen.dart';
-import 'package:focusboard/view/apps/habit/habit_screen.dart';
-import 'package:focusboard/view/apps/kanban/kanban_screen.dart';
+import 'package:minimalcove_app/view/apps/analytics/analytics_screen.dart';
+import 'package:minimalcove_app/view/apps/eisenhower/eisenhower_screen.dart';
+import 'package:minimalcove_app/view/apps/habit/habit_screen.dart';
+import 'package:minimalcove_app/view/apps/kanban/kanban_screen.dart';
 
 /// Root shell hosting the 4 main tabs.
 ///

@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:focusboard/helpers/widgets/my_pages.dart';
+import 'package:minimalcove_app/helpers/widgets/my_pages.dart';
 import 'package:flutter/material.dart';
 
 class MyPagerIndicator extends StatelessWidget {

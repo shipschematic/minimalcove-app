@@ -1,4 +1,4 @@
-/// Centralized route name registry for FocusBoard.
+/// Centralized route name registry for MinimalCove.
 ///
 /// Every navigable destination in the app has its name declared here so that
 /// references throughout the codebase are compile-time safe and refactor-friendly.

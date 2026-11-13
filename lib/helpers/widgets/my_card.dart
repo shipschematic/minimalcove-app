@@ -1,7 +1,7 @@
-import 'package:focusboard/helpers/theme/app_theme.dart';
-import 'package:focusboard/helpers/utils/my_shadow.dart';
-import 'package:focusboard/helpers/widgets/my_constant.dart';
-import 'package:focusboard/helpers/widgets/my_spacing.dart';
+import 'package:minimalcove_app/helpers/theme/app_theme.dart';
+import 'package:minimalcove_app/helpers/utils/my_shadow.dart';
+import 'package:minimalcove_app/helpers/widgets/my_constant.dart';
+import 'package:minimalcove_app/helpers/widgets/my_spacing.dart';
 import 'package:flutter/material.dart';
 
 class MyCard extends StatelessWidget {

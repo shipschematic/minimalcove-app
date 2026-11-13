@@ -1,4 +1,4 @@
-import 'package:focusboard/app/model/task_validator.dart';
+import 'package:minimalcove_app/app/model/task_validator.dart';
 
 class Habit {
   String id;

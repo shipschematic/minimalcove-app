@@ -5,15 +5,15 @@
 #   scripts/install-linux.sh --debug    # install the debug bundle instead
 #   scripts/install-linux.sh --launch   # start it when done
 #
-# Everything lands under $HOME/.local: the bundle in share/focusboard, the menu
+# Everything lands under $HOME/.local: the bundle in share/minimalcove-app, the menu
 # entry in share/applications, icons in share/icons/hicolor.
 set -euo pipefail
 
 root="$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)"
-app_id="io.github.shipblueprint.focusboard"
-dest="$HOME/.local/share/focusboard"
+app_id="io.github.shipblueprint.minimalcove"
+dest="$HOME/.local/share/minimalcove-app"
 desktop="$HOME/.local/share/applications/$app_id.desktop"
-icon_src="$root/focusboard_icon.png"
+icon_src="$root/assets/icon/minimalcove_icon.png"
 variant=release
 launch=0
 
@@ -26,7 +26,7 @@ for arg in "$@"; do
 done
 
 bundle="$root/build/linux/x64/$variant/bundle"
-[ -x "$bundle/FocusBoard" ] || {
+[ -x "$bundle/MinimalCove" ] || {
   echo "no $variant bundle at $bundle — run flutter build linux --$variant first" >&2
   exit 1
 }
@@ -38,9 +38,9 @@ if [ -n "$newest_src" ]; then
   echo "warning: $newest_src is newer than the bundle; it may not contain the current code" >&2
 fi
 
-if pgrep -x FocusBoard >/dev/null; then
+if pgrep -x MinimalCove >/dev/null; then
   echo "stopping the running instance"
-  pkill -x FocusBoard
+  pkill -x MinimalCove
   sleep 1
 fi
 
@@ -53,10 +53,10 @@ mkdir -p "$(dirname "$desktop")"
 cat > "$desktop" <<EOF
 [Desktop Entry]
 Type=Application
-Name=FocusBoard
+Name=Minimal Cove
 GenericName=Task Board
 Comment=Kanban board, Eisenhower matrix, analytics and habit tracker
-Exec=$dest/FocusBoard %U
+Exec=$dest/MinimalCove %U
 Icon=$app_id
 Terminal=false
 Categories=Office;ProjectManagement;
@@ -79,11 +79,11 @@ command -v desktop-file-validate >/dev/null && desktop-file-validate "$desktop"
 command -v update-desktop-database >/dev/null &&
   update-desktop-database "$HOME/.local/share/applications" || true
 
-echo "installed: $dest/FocusBoard"
+echo "installed: $dest/MinimalCove"
 ls -l "$dest/lib/libapp.so"
 
 if [ "$launch" = 1 ]; then
-  setsid nohup "$dest/FocusBoard" >/tmp/focusboard.log 2>&1 </dev/null &
+  setsid nohup "$dest/MinimalCove" >/tmp/minimalcove-app.log 2>&1 </dev/null &
   disown
-  echo "launched (log: /tmp/focusboard.log)"
+  echo "launched (log: /tmp/minimalcove-app.log)"
 fi

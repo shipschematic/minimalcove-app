@@ -3,7 +3,7 @@
 import 'dart:async';
 import 'dart:ui';
 
-import 'package:focusboard/helpers/widgets/my_page_indicator.dart';
+import 'package:minimalcove_app/helpers/widgets/my_page_indicator.dart';
 import 'package:flutter/material.dart';
 
 class MyPageDragger extends StatefulWidget {

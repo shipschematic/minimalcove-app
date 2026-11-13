@@ -1,6 +1,6 @@
 {
-    "name": "FocusBoard",
-    "short_name": "FocusBoard",
+    "name": "Minimal Cove",
+    "short_name": "Minimal Cove",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#6750A4",

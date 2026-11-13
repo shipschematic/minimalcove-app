@@ -1,4 +1,4 @@
-# PROJECT_MAP — FocusBoard
+# PROJECT_MAP — Minimal Cove
 
 Living map of the codebase for whoever (human or agent) edits it next.
 Update it in the same change that alters anything described here; anything you
@@ -11,7 +11,7 @@ Last reviewed: 2026-10-24 (Android Gradle migration landed; releases v1.0.1 Linu
 ## 1. Entry points and wiring
 
 ```
-lib/main.dart              main() → LocalStorage/AppStyle/ThemeCustomizer init → FocusBoardApp
+lib/main.dart              main() → LocalStorage/AppStyle/ThemeCustomizer init → MinimalCoveApp
                              GetMaterialApp(initialRoute: route.appLayout, getPages: getPageRoute())
 lib/route/routes_name.dart Route name registry, exposed as the global `route` (route/route_method.dart)
 lib/route/routes.dart      GetPage list. Only `route.appLayout` carries a binding.
@@ -166,9 +166,9 @@ Recorded, not fixed — each is outside the change that surfaced it.
 5. **`pubspec.yaml` version is `0.1.0+1`** while the published GitHub releases are `v1.0.x`.
    The Android APK now published as `v1.0.2` carries that `0.1.0+1` as its versionCode and
    versionName, because `build.gradle.kts` reads `flutter.versionCode`/`flutter.versionName`.
-6. **Application ids are still under `com.example`.** Android moved `com.example.henox` →
-   `com.example.focusboard` with the Kotlin DSL migration, iOS and macOS are unchanged, and only
-   `linux/CMakeLists.txt` carries the real identity (`io.github.shipblueprint.focusboard`).
+6. **Application ids are still under `com.example`.** Android moved `com.shipblueprint.minimalcove` →
+   `com.shipblueprint.minimalcove` with the Kotlin DSL migration, iOS and macOS are unchanged, and only
+   `linux/CMakeLists.txt` carries the real identity (`io.github.shipblueprint.minimalcove`).
    Changing the Android id again makes the app a different application to Android, so existing
    installs cannot be upgraded — see ticket 09 for that trade-off.
 7. **`_Quadrant` overflows its Column by 1px at 800×600.** Surfaced by the transfer widget
@@ -190,8 +190,8 @@ Recorded, not fixed — each is outside the change that surfaced it.
     same class, so deleting the registry means editing the file that owns the palette.
 11. **`AppTheme.createTheme()` is dead** — the app installs `AppTheme.theme`, so only the two
     `lightTheme`/`darkTheme` builders below it are on the colour path.
-12. **Untracked litter sits at the repo root and in `android/`:** `FocusBoard-linux-x64.tar.gz`,
-    `FocusBoard-windows-x64.zip` (published assets, duplicated locally), `android_old/` and
+12. **Untracked litter sits at the repo root and in `android/`:** `MinimalCove-linux-x64.tar.gz`,
+    `MinimalCove-windows-x64.zip` (published assets, duplicated locally), `android_old/` and
     `pubspec.yaml.bak` (backups from the Android migration). None is ignored, so `git add -A`
     would commit all of them. Delete or ignore deliberately; they are not evidence of anything.
 
@@ -201,12 +201,12 @@ Recorded, not fixed — each is outside the change that surfaced it.
 /mnt/data/flutter/bin/flutter test                       # 34 tests as of 2026-10-24
 /mnt/data/flutter/bin/flutter analyze --no-pub           # baseline is 3 info lints
 /mnt/data/gtkdev/flutter-linux-build.sh --release        # needs the GTK prefix until gtk3-devel is installed
-scripts/install-linux.sh                                 # build → ~/.local/share/focusboard + .desktop + icons
-build/linux/x64/release/bundle/FocusBoard                # boots; AppBinding resolves the Kanban→Eisenhower order here
+scripts/install-linux.sh                                 # build → ~/.local/share/minimalcove-app + .desktop + icons
+build/linux/x64/release/bundle/MinimalCove                # boots; AppBinding resolves the Kanban→Eisenhower order here
 ```
 
 Only `bundle/lib/libapp.so` (the Dart payload) changes for Dart-only edits — a stale-looking
-`FocusBoard` executable timestamp is normal, and the payload itself keeps its original mtime when
+`MinimalCove` executable timestamp is normal, and the payload itself keeps its original mtime when
 Flutter reuses the cached AOT snapshot from `.dart_tool`, so compare md5 against the bundle rather
 than trusting timestamps. `scripts/install-linux.sh` refuses to install a bundle older than `lib/`,
 so a forgotten rebuild cannot reach the install.

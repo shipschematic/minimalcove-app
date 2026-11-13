@@ -1,4 +1,4 @@
-import 'package:focusboard/helpers/utils/mixins/ui_mixin.dart';
+import 'package:minimalcove_app/helpers/utils/mixins/ui_mixin.dart';
 import 'package:flutter/material.dart';
 
 enum CustomPopupMenuPlacement { left, right, top, bottom }

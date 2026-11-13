@@ -1,4 +1,4 @@
-import 'package:focusboard/route/routes_name.dart';
+import 'package:minimalcove_app/route/routes_name.dart';
 
 /// Single global instance of the [RoutesName] registry.
 ///

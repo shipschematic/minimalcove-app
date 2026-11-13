@@ -24,6 +24,14 @@ migrate_working_dir/
 # pi (coding agent) skills & configuration
 .opencode/
 
+# Local tooling / artifacts
+.layout/
+.qoder/
+.scratch/
+.dist/
+dist/
+*.bak
+
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
@@ -44,3 +52,4 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+.firebase/

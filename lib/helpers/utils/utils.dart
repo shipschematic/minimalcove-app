@@ -1,4 +1,4 @@
-import 'package:focusboard/helpers/extensions/date_time_extension.dart';
+import 'package:minimalcove_app/helpers/extensions/date_time_extension.dart';
 
 class Utils {
   static getDateStringFromDateTime(DateTime dateTime,

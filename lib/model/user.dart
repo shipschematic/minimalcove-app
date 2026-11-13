@@ -1,5 +1,5 @@
 
-import 'package:focusboard/model/identifier_model.dart';
+import 'package:minimalcove_app/model/identifier_model.dart';
 
 class User extends IdentifierModel {
   final String email, firstName, lastName;

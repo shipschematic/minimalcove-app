@@ -1,10 +1,10 @@
-import 'package:focusboard/helpers/theme/app_theme.dart';
-import 'package:focusboard/helpers/widgets/my_flex_item.dart';
-import 'package:focusboard/helpers/widgets/my_list_extension.dart';
-import 'package:focusboard/helpers/widgets/my_responsive.dart';
-import 'package:focusboard/helpers/widgets/my_screen_media.dart';
-import 'package:focusboard/helpers/widgets/my_screen_media_type.dart';
-import 'package:focusboard/helpers/widgets/my_spacing.dart';
+import 'package:minimalcove_app/helpers/theme/app_theme.dart';
+import 'package:minimalcove_app/helpers/widgets/my_flex_item.dart';
+import 'package:minimalcove_app/helpers/widgets/my_list_extension.dart';
+import 'package:minimalcove_app/helpers/widgets/my_responsive.dart';
+import 'package:minimalcove_app/helpers/widgets/my_screen_media.dart';
+import 'package:minimalcove_app/helpers/widgets/my_screen_media_type.dart';
+import 'package:minimalcove_app/helpers/widgets/my_spacing.dart';
 import 'package:flutter/material.dart';
 
 class MyFlex extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:focusboard/helpers/widgets/my_middleware.dart';
+import 'package:minimalcove_app/helpers/widgets/my_middleware.dart';
 import 'package:flutter/material.dart';
 
 class MyRoute {

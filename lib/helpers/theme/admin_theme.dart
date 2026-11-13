@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:focusboard/helpers/theme/theme_customizer.dart';
+import 'package:minimalcove_app/helpers/theme/theme_customizer.dart';
 
 enum LeftBarThemeType { light, dark }
 

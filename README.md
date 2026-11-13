@@ -1,4 +1,4 @@
-<h1 align="center">FocusBoard</h1>
+<h1 align="center">Minimal Cove</h1>
 
 <p align="center">
   <strong>A productivity app combining Kanban boards and the Eisenhower Matrix.</strong>
@@ -38,8 +38,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/shipblueprint/focusboard.git
-cd focusboard/app
+git clone https://github.com/shipblueprint/minimalcove-app.git
+cd minimalcove-app
 
 # Install dependencies
 flutter pub get
@@ -70,9 +70,9 @@ flutter build linux --release
 
 ### Windows
 
-Pre-built Windows releases are available on the [Releases page](https://github.com/shipblueprint/FocusBoard/releases).
+Pre-built Windows releases are available on the [Releases page](https://github.com/shipblueprint/minimalcove-app/releases).
 
-Download the latest `FocusBoard-windows-x64.zip`, extract it anywhere, and run `FocusBoard.exe`.
+Download the latest `MinimalCove-windows-x64.zip`, extract it anywhere, and run `MinimalCove.exe`.
 
 > **No installation required** — just unzip and run. The app is fully self-contained.
 
@@ -84,11 +84,11 @@ flutter build windows --release
 
 ### Linux
 
-Download the latest `FocusBoard-linux-x64.tar.gz` from the [Releases page](https://github.com/shipblueprint/FocusBoard/releases), extract it, and run the `FocusBoard` binary inside:
+Download the latest `MinimalCove-linux-x64.tar.gz` from the [Releases page](https://github.com/shipblueprint/minimalcove-app/releases), extract it, and run the `MinimalCove` binary inside:
 
 ```bash
-tar xzf FocusBoard-linux-x64.tar.gz
-./FocusBoard/FocusBoard
+tar xzf MinimalCove-linux-x64.tar.gz
+./MinimalCove/MinimalCove
 ```
 
 > **No installation required** — the bundle is self-contained, but it does use the system GTK 3 libraries (`libgtk-3.so.0`), which are already present on any desktop Linux distribution. Requires glibc 2.34 or newer (Ubuntu 22.04+, Debian 12+, Fedora 36+).
@@ -104,20 +104,20 @@ one script — it builds nothing itself, so run `flutter build linux --release` 
 `--debug` variant) first:
 
 ```bash
-scripts/install-linux.sh            # release bundle -> ~/.local/share/focusboard
+scripts/install-linux.sh            # release bundle -> ~/.local/share/minimalcove-app
 scripts/install-linux.sh --debug    # install the debug bundle instead
 scripts/install-linux.sh --launch   # ...and start it afterwards
 ```
 
 It stops any running instance, `rsync --delete`s the bundle into
-`~/.local/share/focusboard/`, (re)writes
-`~/.local/share/applications/io.github.shipblueprint.focusboard.desktop` — whose `Exec=` line
-is the authoritative path — regenerates the hicolor icon sizes from `focusboard_icon.png`,
+`~/.local/share/minimalcove-app/`, (re)writes
+`~/.local/share/applications/io.github.shipblueprint.minimalcove.desktop` — whose `Exec=` line
+is the authoritative path — regenerates the hicolor icon sizes from `assets/icon/minimalcove_icon.png`,
 validates the desktop file, refreshes the mime/icon caches, and prints the installed
 `libapp.so` timestamp so you can confirm the new code landed.
 
 > It refuses to install a bundle whose `libapp.so` is older than `lib/`. Dart-only edits do
-> not relink the runner, so `FocusBoard` itself keeps an old timestamp — always check
+> not relink the runner, so `MinimalCove` itself keeps an old timestamp — always check
 > `lib/libapp.so`, never the executable.
 
 A Linux build needs a C/C++ toolchain plus the GTK 3 development headers, and the
@@ -171,13 +171,13 @@ flutter doctor   # "Linux toolchain" must be green
    (`version: 1.0.1+2` pairs with tag `v1.0.1`).
 2. **Build each platform from the commit you intend to publish**, so the tag and the
    binaries describe the same code.
-3. **Package** one archive per platform, named `FocusBoard-<platform>-<arch>.zip|tar.gz`.
+3. **Package** one archive per platform, named `MinimalCove-<platform>-<arch>.zip|tar.gz`.
    The Linux `bundle/` directory *is* the release:
 
    ```bash
    cd build/linux/x64/release
-   # re-root to FocusBoard/ so extraction does not create a folder named "bundle"
-   tar czf ../../../FocusBoard-linux-x64.tar.gz --transform 's,^bundle,FocusBoard,' bundle
+   # re-root to MinimalCove/ so extraction does not create a folder named "bundle"
+   tar czf ../../../MinimalCove-linux-x64.tar.gz --transform 's,^bundle,MinimalCove,' bundle
    ```
 
 4. **Publish**, targeting the exact commit the artifact was built from:
@@ -185,7 +185,7 @@ flutter doctor   # "Linux toolchain" must be green
    ```bash
    gh release create v1.0.1 --target "$(git rev-parse HEAD)" \
      --title "v1.0.1 — Linux (x86-64)" --notes-file notes.md \
-     FocusBoard-linux-x64.tar.gz
+     MinimalCove-linux-x64.tar.gz
    ```
 
    `--target` needs a **full** commit SHA; an abbreviated one fails with
@@ -197,12 +197,12 @@ flutter doctor   # "Linux toolchain" must be green
 > * Each platform currently lives on its own release (`v1.0.0` = Windows, `v1.0.1` = Linux)
 >   so every tag matches the source its binary was built from. GitHub marks the newest
 >   release *Latest*, so link the other platforms from each release's notes.
-> * `focusboard_icon.png` in the repo root is the single source of truth for the icon.
+> * `assets/icon/minimalcove_icon.png` is the single source of truth for the icon.
 >   Windows consumes a derived `windows/runner/resources/app_icon.ico` — regenerate it
 >   when the icon changes. Linux installs the PNG itself into `data/icons/` and loads it
 >   at runtime, so it needs no conversion step.
 > * `android/`, `ios/` and `macos/` still carry the template identifier
->   `com.example.henox`. Changing `applicationId` / `PRODUCT_BUNDLE_IDENTIFIER` changes
+>   `com.shipblueprint.minimalcove`. Changing `applicationId` / `PRODUCT_BUNDLE_IDENTIFIER` changes
 >   install identity and stops existing users from receiving updates — treat it as a
 >   planned migration, not a rename.
 

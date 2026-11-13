@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:focusboard/helpers/services/storage/local_storage.dart';
-import 'package:focusboard/helpers/theme/app_theme.dart';
-import 'package:focusboard/helpers/theme/theme_customizer.dart';
-import 'package:focusboard/route/route_method.dart';
-import 'package:focusboard/route/routes.dart';
+import 'package:minimalcove_app/helpers/services/storage/local_storage.dart';
+import 'package:minimalcove_app/helpers/theme/app_theme.dart';
+import 'package:minimalcove_app/helpers/theme/theme_customizer.dart';
+import 'package:minimalcove_app/route/route_method.dart';
+import 'package:minimalcove_app/route/routes.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await LocalStorage.init();
   AppStyle.init();
   await ThemeCustomizer.init();
-  runApp(const FocusBoardApp());
+  runApp(const MinimalCoveApp());
 }
 
-class FocusBoardApp extends StatelessWidget {
-  const FocusBoardApp({super.key});
+class MinimalCoveApp extends StatelessWidget {
+  const MinimalCoveApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'FocusBoard',
+      title: 'Minimal Cove',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,

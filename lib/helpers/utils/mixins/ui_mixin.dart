@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:focusboard/helpers/theme/admin_theme.dart';
-import 'package:focusboard/helpers/theme/app_theme.dart';
-import 'package:focusboard/helpers/widgets/my_dashed_divider.dart';
-import 'package:focusboard/helpers/widgets/my_navigation_mixin.dart';
-import 'package:focusboard/helpers/widgets/my_spacing.dart';
+import 'package:minimalcove_app/helpers/theme/admin_theme.dart';
+import 'package:minimalcove_app/helpers/theme/app_theme.dart';
+import 'package:minimalcove_app/helpers/widgets/my_dashed_divider.dart';
+import 'package:minimalcove_app/helpers/widgets/my_navigation_mixin.dart';
+import 'package:minimalcove_app/helpers/widgets/my_spacing.dart';
 
 mixin UIMixin {
   LeftBarTheme get leftBarTheme => AdminTheme.theme.leftBarTheme;

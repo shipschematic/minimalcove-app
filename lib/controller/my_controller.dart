@@ -1,4 +1,4 @@
-import 'package:focusboard/helpers/theme/theme_customizer.dart';
+import 'package:minimalcove_app/helpers/theme/theme_customizer.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 
 /// Base class for GetX controllers that should rebuild on theme change.

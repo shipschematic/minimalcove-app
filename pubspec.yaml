@@ -1,5 +1,5 @@
-name: focusboard
-description: "FocusBoard — a productivity app combining Kanban boards and the Eisenhower Matrix."
+name: minimalcove_app
+description: "Minimal Cove — a productivity app combining Kanban boards and the Eisenhower Matrix."
 publish_to: 'none'
 version: 0.1.0+1
 

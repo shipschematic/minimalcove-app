@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:focusboard/app/model/eisenhower_task_model.dart';
-import 'package:focusboard/app/model/habit_model.dart';
-import 'package:focusboard/app/model/task_model.dart';
+import 'package:minimalcove_app/app/model/eisenhower_task_model.dart';
+import 'package:minimalcove_app/app/model/habit_model.dart';
+import 'package:minimalcove_app/app/model/task_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// Persists Kanban and Eisenhower tasks to [SharedPreferences] as JSON.

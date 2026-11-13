@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_generic_function_type_aliases
 
-import 'package:focusboard/helpers/theme/app_theme.dart';
+import 'package:minimalcove_app/helpers/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 enum MyTextType {

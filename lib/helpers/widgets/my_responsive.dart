@@ -1,5 +1,5 @@
-import 'package:focusboard/helpers/widgets/my_screen_media.dart';
-import 'package:focusboard/helpers/widgets/my_screen_media_type.dart';
+import 'package:minimalcove_app/helpers/widgets/my_screen_media.dart';
+import 'package:minimalcove_app/helpers/widgets/my_screen_media_type.dart';
 import 'package:flutter/material.dart';
 
 class MyResponsive extends StatelessWidget {

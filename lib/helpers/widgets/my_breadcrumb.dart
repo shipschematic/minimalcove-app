@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lucide/flutter_lucide.dart';
-import 'package:focusboard/helpers/theme/app_theme.dart';
-import 'package:focusboard/helpers/widgets/my_breadcrumb_item.dart';
-import 'package:focusboard/helpers/widgets/my_constant.dart';
-import 'package:focusboard/helpers/widgets/my_responsive.dart';
-import 'package:focusboard/helpers/widgets/my_router.dart';
-import 'package:focusboard/helpers/widgets/my_spacing.dart';
-import 'package:focusboard/helpers/widgets/my_text.dart';
+import 'package:minimalcove_app/helpers/theme/app_theme.dart';
+import 'package:minimalcove_app/helpers/widgets/my_breadcrumb_item.dart';
+import 'package:minimalcove_app/helpers/widgets/my_constant.dart';
+import 'package:minimalcove_app/helpers/widgets/my_responsive.dart';
+import 'package:minimalcove_app/helpers/widgets/my_router.dart';
+import 'package:minimalcove_app/helpers/widgets/my_spacing.dart';
+import 'package:minimalcove_app/helpers/widgets/my_text.dart';
 
 class MyBreadcrumb extends StatelessWidget {
   final List<MyBreadcrumbItem> children;

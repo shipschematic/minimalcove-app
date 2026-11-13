@@ -1,5 +1,5 @@
-import 'package:focusboard/helpers/utils/my_string_utils.dart';
-import 'package:focusboard/helpers/widgets/my_field_validator.dart';
+import 'package:minimalcove_app/helpers/utils/my_string_utils.dart';
+import 'package:minimalcove_app/helpers/widgets/my_field_validator.dart';
 
 class MyEmailValidator extends MyFieldValidatorRule<String> {
   @override

@@ -1,13 +1,13 @@
 import 'dart:io';
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:focusboard/helpers/theme/admin_theme.dart';
-import 'package:focusboard/helpers/theme/theme_customizer.dart';
-import 'package:focusboard/helpers/widgets/my.dart';
-import 'package:focusboard/helpers/widgets/my_breadcrumb_item.dart';
-import 'package:focusboard/helpers/widgets/my_constant.dart';
-import 'package:focusboard/helpers/widgets/my_screen_media.dart';
-import 'package:focusboard/helpers/widgets/my_text_style.dart';
+import 'package:minimalcove_app/helpers/theme/admin_theme.dart';
+import 'package:minimalcove_app/helpers/theme/theme_customizer.dart';
+import 'package:minimalcove_app/helpers/widgets/my.dart';
+import 'package:minimalcove_app/helpers/widgets/my_breadcrumb_item.dart';
+import 'package:minimalcove_app/helpers/widgets/my_constant.dart';
+import 'package:minimalcove_app/helpers/widgets/my_screen_media.dart';
+import 'package:minimalcove_app/helpers/widgets/my_text_style.dart';
 
 ThemeData get theme => AppTheme.theme;
 

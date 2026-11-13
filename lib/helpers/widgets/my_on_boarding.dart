@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:focusboard/helpers/widgets/my_page_dragger.dart';
-import 'package:focusboard/helpers/widgets/my_page_indicator.dart';
-import 'package:focusboard/helpers/widgets/my_page_reveal.dart';
-import 'package:focusboard/helpers/widgets/my_pages.dart';
+import 'package:minimalcove_app/helpers/widgets/my_page_dragger.dart';
+import 'package:minimalcove_app/helpers/widgets/my_page_indicator.dart';
+import 'package:minimalcove_app/helpers/widgets/my_page_reveal.dart';
+import 'package:minimalcove_app/helpers/widgets/my_pages.dart';
 import 'package:flutter/material.dart';
 
 class MyOnBoarding extends StatefulWidget {

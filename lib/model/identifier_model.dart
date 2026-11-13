@@ -1,4 +1,4 @@
-import 'package:focusboard/model/model.dart';
+import 'package:minimalcove_app/model/model.dart';
 
 abstract class IdentifierModel<T> extends Model {
   final int id;

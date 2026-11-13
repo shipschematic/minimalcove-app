@@ -1,4 +1,4 @@
-import 'package:focusboard/helpers/widgets/my_breadcrumb_item.dart';
+import 'package:minimalcove_app/helpers/widgets/my_breadcrumb_item.dart';
 
 class MyConstantData {
   final double containerRadius;

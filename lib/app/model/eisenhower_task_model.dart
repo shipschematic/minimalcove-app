@@ -1,6 +1,6 @@
-import 'package:focusboard/app/model/eisenhower_config.dart';
-import 'package:focusboard/app/model/task_model.dart';
-import 'package:focusboard/app/model/task_validator.dart';
+import 'package:minimalcove_app/app/model/eisenhower_config.dart';
+import 'package:minimalcove_app/app/model/task_model.dart';
+import 'package:minimalcove_app/app/model/task_validator.dart';
 
 /// A task that lives in the Eisenhower Matrix.
 ///

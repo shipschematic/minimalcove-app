@@ -1,11 +1,11 @@
 // ignore_for_file: unrelated_type_equality_checks
 
 import 'package:flutter/material.dart';
-import 'package:focusboard/helpers/theme/app_theme.dart';
-import 'package:focusboard/helpers/widgets/my_bottom_navigation_bar_item.dart';
-import 'package:focusboard/helpers/widgets/my_container.dart';
-import 'package:focusboard/helpers/widgets/my_spacing.dart';
-import 'package:focusboard/helpers/widgets/my_text_style.dart';
+import 'package:minimalcove_app/helpers/theme/app_theme.dart';
+import 'package:minimalcove_app/helpers/widgets/my_bottom_navigation_bar_item.dart';
+import 'package:minimalcove_app/helpers/widgets/my_container.dart';
+import 'package:minimalcove_app/helpers/widgets/my_spacing.dart';
+import 'package:minimalcove_app/helpers/widgets/my_text_style.dart';
 
 enum MyBottomNavigationBarType {
   normal,

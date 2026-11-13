@@ -1,4 +1,4 @@
-import 'package:focusboard/helpers/widgets/my_base_exception.dart';
+import 'package:minimalcove_app/helpers/widgets/my_base_exception.dart';
 
 class RouteException extends BaseException {
   final String message;

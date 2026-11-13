@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:focusboard/app/model/eisenhower_config.dart';
-import 'package:focusboard/app/model/eisenhower_task_model.dart';
-import 'package:focusboard/app/model/task_model.dart';
-import 'package:focusboard/app/model/task_validator.dart';
+import 'package:minimalcove_app/app/model/eisenhower_config.dart';
+import 'package:minimalcove_app/app/model/eisenhower_task_model.dart';
+import 'package:minimalcove_app/app/model/task_model.dart';
+import 'package:minimalcove_app/app/model/task_validator.dart';
 
 void main() {
   group('Task model', () {

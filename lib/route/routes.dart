@@ -1,10 +1,10 @@
-import 'package:focusboard/app/controller/app_binding.dart';
-import 'package:focusboard/route/route_method.dart';
-import 'package:focusboard/view/app_layout/app_layout.dart';
-import 'package:focusboard/view/apps/analytics/analytics_screen.dart';
-import 'package:focusboard/view/apps/eisenhower/eisenhower_screen.dart';
-import 'package:focusboard/view/apps/habit/habit_screen.dart';
-import 'package:focusboard/view/apps/kanban/kanban_screen.dart';
+import 'package:minimalcove_app/app/controller/app_binding.dart';
+import 'package:minimalcove_app/route/route_method.dart';
+import 'package:minimalcove_app/view/app_layout/app_layout.dart';
+import 'package:minimalcove_app/view/apps/analytics/analytics_screen.dart';
+import 'package:minimalcove_app/view/apps/eisenhower/eisenhower_screen.dart';
+import 'package:minimalcove_app/view/apps/habit/habit_screen.dart';
+import 'package:minimalcove_app/view/apps/kanban/kanban_screen.dart';
 import 'package:get/get.dart';
 
 /// Returns the list of [GetPage] entries used by [GetMaterialApp].

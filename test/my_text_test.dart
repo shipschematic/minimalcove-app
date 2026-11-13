@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:focusboard/helpers/widgets/my_text.dart';
-import 'package:focusboard/helpers/widgets/my_text_style.dart';
+import 'package:minimalcove_app/helpers/widgets/my_text.dart';
+import 'package:minimalcove_app/helpers/widgets/my_text_style.dart';
 
 void main() {
   testWidgets('MyText renders without GoogleFonts (system font fallback)',

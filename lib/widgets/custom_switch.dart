@@ -1,5 +1,5 @@
-import 'package:focusboard/helpers/utils/mixins/ui_mixin.dart';
-import 'package:focusboard/helpers/widgets/my_spacing.dart';
+import 'package:minimalcove_app/helpers/utils/mixins/ui_mixin.dart';
+import 'package:minimalcove_app/helpers/widgets/my_spacing.dart';
 import 'package:flutter/material.dart';
 
 class CustomSwitch extends StatefulWidget {

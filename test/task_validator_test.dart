@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:focusboard/app/model/task_validator.dart';
+import 'package:minimalcove_app/app/model/task_validator.dart';
 
 void main() {
   group('TaskValidator.sanitizeTitle', () {

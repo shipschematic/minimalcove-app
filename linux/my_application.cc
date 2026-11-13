@@ -28,7 +28,7 @@ set_application_icon(GtkWindow* window)
     exe_path[length] = '\0';
     g_autofree char* dir = g_path_get_dirname(exe_path);
     g_autofree char* icon_path =
-        g_build_filename(dir, "data", "icons", "focusboard.png", NULL);
+        g_build_filename(dir, "data", "icons", "minimalcove.png", NULL);
     g_autoptr(GdkPixbuf) pixbuf =
         gdk_pixbuf_new_from_file_at_size(icon_path, 256, 256, NULL);
     if (pixbuf != NULL) {
@@ -66,11 +66,11 @@ static void my_application_activate(GApplication* application) {
   if (use_header_bar) {
     GtkHeaderBar* header_bar = GTK_HEADER_BAR(gtk_header_bar_new());
     gtk_widget_show(GTK_WIDGET(header_bar));
-    gtk_header_bar_set_title(header_bar, "FocusBoard");
+    gtk_header_bar_set_title(header_bar, "Minimal Cove");
     gtk_header_bar_set_show_close_button(header_bar, TRUE);
     gtk_window_set_titlebar(window, GTK_WIDGET(header_bar));
   } else {
-    gtk_window_set_title(window, "FocusBoard");
+    gtk_window_set_title(window, "Minimal Cove");
   }
 
   gtk_window_set_default_size(window, 1280, 720);

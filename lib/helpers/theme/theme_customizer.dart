@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:focusboard/helpers/services/json_decoder.dart';
-import 'package:focusboard/helpers/theme/admin_theme.dart';
-import 'package:focusboard/helpers/theme/app_theme.dart';
+import 'package:minimalcove_app/helpers/services/json_decoder.dart';
+import 'package:minimalcove_app/helpers/theme/admin_theme.dart';
+import 'package:minimalcove_app/helpers/theme/app_theme.dart';
 
 typedef ThemeChangeCallback = void Function(
     ThemeCustomizer oldVal, ThemeCustomizer newVal);

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:focusboard/helpers/theme/app_theme.dart';
-import 'package:focusboard/helpers/widgets/my_constant.dart';
-import 'package:focusboard/helpers/widgets/my_screen_media.dart';
-import 'package:focusboard/helpers/widgets/my_text_style.dart';
+import 'package:minimalcove_app/helpers/theme/app_theme.dart';
+import 'package:minimalcove_app/helpers/widgets/my_constant.dart';
+import 'package:minimalcove_app/helpers/widgets/my_screen_media.dart';
+import 'package:minimalcove_app/helpers/widgets/my_text_style.dart';
 
 class My {
   // entry point of the package
