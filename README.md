@@ -5,7 +5,7 @@
   <br/>
   <a href="https://flutter.dev" target="_blank"><img src="https://img.shields.io/badge/Flutter-3.5+-02569B?logo=flutter&logoColor=white" alt="Flutter 3.5+"/></a>
   <a href="https://dart.dev" target="_blank"><img src="https://img.shields.io/badge/Dart-3.5+-0175C2?logo=dart&logoColor=white" alt="Dart 3.5+"/></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License: MIT"/></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Proprietary-red" alt="License: Proprietary"/></a>
 </p>
 
 ---
@@ -162,41 +162,30 @@ flutter doctor   # "Linux toolchain" must be green
 | 🍎 iOS | ✅ Supported (macOS build required) |
 | 🪟 Windows | ✅ Supported (x86‑64) |
 | 🐧 Linux | ✅ Supported (x86‑64) |
-| 🌐 Web | ⏳ Experimental |
+| 🌐 Web | ✅ Preview — [minimalcove-app.web.app](https://minimalcove-app.web.app) |
 
 ## 📦 Releasing
 
 1. **Bump the version** in `pubspec.yaml`. The `version:` field is what the running app
    reports and it is independent of the git tag — keep the two in step
-   (`version: 1.0.1+2` pairs with tag `v1.0.1`).
-2. **Build each platform from the commit you intend to publish**, so the tag and the
-   binaries describe the same code.
-3. **Package** one archive per platform, named `MinimalCove-<platform>-<arch>.zip|tar.gz`.
-   The Linux `bundle/` directory *is* the release:
+   (`version: 0.2.0+2` pairs with tag `v0.2.0`).
+2. **Tag and push** from the commit you intend to publish:
 
    ```bash
-   cd build/linux/x64/release
-   # re-root to MinimalCove/ so extraction does not create a folder named "bundle"
-   tar czf ../../../MinimalCove-linux-x64.tar.gz --transform 's,^bundle,MinimalCove,' bundle
+   git commit -am "chore: release v0.2.0"
+   git tag v0.2.0
+   git push origin main v0.2.0
    ```
 
-4. **Publish**, targeting the exact commit the artifact was built from:
-
-   ```bash
-   gh release create v1.0.1 --target "$(git rev-parse HEAD)" \
-     --title "v1.0.1 — Linux (x86-64)" --notes-file notes.md \
-     MinimalCove-linux-x64.tar.gz
-   ```
-
-   `--target` needs a **full** commit SHA; an abbreviated one fails with
-   `Release.target_commitish is invalid`. To add an asset to an existing release, use
-   `gh release upload <tag> <file>`.
-5. **Confirm the asset serves** — `curl -sIL <download-url> | head -1` should return 200.
+3. **CI publishes** the GitHub Release. `release.yml` builds Android, Linux, Windows,
+   macOS, iOS, and web, then attaches `MinimalCove-<platform>-<arch>.zip|tar.gz` plus
+   split APKs and an AAB. No manual `gh release create` needed.
+4. **Confirm the run** with `gh run list --workflow Release` and check the assets on the
+   release page. Web deploys separately on every push to `main`.
 
 > **Conventions**
-> * Each platform currently lives on its own release (`v1.0.0` = Windows, `v1.0.1` = Linux)
->   so every tag matches the source its binary was built from. GitHub marks the newest
->   release *Latest*, so link the other platforms from each release's notes.
+> * One tag publishes every platform together, so a release page carries all artifacts
+>   built from the same commit.
 > * `assets/icon/minimalcove_icon.png` is the single source of truth for the icon.
 >   Windows consumes a derived `windows/runner/resources/app_icon.ico` — regenerate it
 >   when the icon changes. Linux installs the PNG itself into `data/icons/` and loads it
@@ -206,19 +195,10 @@ flutter doctor   # "Linux toolchain" must be green
 >   install identity and stops existing users from receiving updates — treat it as a
 >   planned migration, not a rename.
 
-## 🤝 Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Minimal Cove is free to use as a compiled application. The source code is proprietary
+and licensed separately, not open source. See [`LICENSE`](LICENSE) for the full terms.
 
 ---
 
