@@ -58,6 +58,7 @@ After building Linux bundle:
 ```bash
 scripts/install-linux.sh            # release bundle -> ~/.local/share/minimalcove-app
 scripts/install-linux.sh --debug    # debug bundle
+scripts/install-linux.sh --bundle ~/Downloads/MinimalCove-linux-x64/MinimalCove  # extracted release
 scripts/install-linux.sh --launch   # install and launch
 ```
 

@@ -106,6 +106,7 @@ one script — it builds nothing itself, so run `flutter build linux --release` 
 ```bash
 scripts/install-linux.sh            # release bundle -> ~/.local/share/minimalcove-app
 scripts/install-linux.sh --debug    # install the debug bundle instead
+scripts/install-linux.sh --bundle ~/Downloads/MinimalCove-linux-x64/MinimalCove  # install an extracted release
 scripts/install-linux.sh --launch   # ...and start it afterwards
 ```
 
