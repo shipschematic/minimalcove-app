@@ -5,7 +5,7 @@ Notable changes and releases for Minimal Cove.
 ## Unreleased
 
 - Docs: web is a supported preview at `https://minimalcove-app.web.app`; removed the Contributing section
-- License: replaced MIT with a proprietary license — the compiled app is free to use, the source is licensed separately
+- License: released under the MIT License
 - Hosting: no-cache headers now cover `/`, `index.html`, the service worker, bootstrap script, and manifest so renamed titles update immediately
 - Hosting: web app serves from `https://minimalcove-app.web.app`; `minimalcove.web.app` reserved for the landing site
 - Documentation: added `docs/index.md`, `docs/installation.md`, `docs/changelog.md`; organized project docs under `docs/`
