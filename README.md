@@ -5,7 +5,7 @@
   <br/>
   <a href="https://flutter.dev" target="_blank"><img src="https://img.shields.io/badge/Flutter-3.5+-02569B?logo=flutter&logoColor=white" alt="Flutter 3.5+"/></a>
   <a href="https://dart.dev" target="_blank"><img src="https://img.shields.io/badge/Dart-3.5+-0175C2?logo=dart&logoColor=white" alt="Dart 3.5+"/></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Proprietary-red" alt="License: Proprietary"/></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License: MIT"/></a>
 </p>
 
 ---
@@ -198,8 +198,7 @@ flutter doctor   # "Linux toolchain" must be green
 
 ## 📄 License
 
-Minimal Cove is free to use as a compiled application. The source code is proprietary
-and licensed separately, not open source. See [`LICENSE`](LICENSE) for the full terms.
+Minimal Cove is released under the [MIT License](LICENSE).
 
 ---
 
