@@ -30,7 +30,7 @@ gcloud iam service-accounts keys create /tmp/minimalcove-ci.json \
   --iam-account=github-actions-hosting@minimalcove.iam.gserviceaccount.com
 
 gh secret set FIREBASE_SERVICE_ACCOUNT_MINIMALCOVE \
-  --repo shipblueprint/minimalcove-app < /tmp/minimalcove-ci.json
+  --repo shipschematic/minimalcove-app < /tmp/minimalcove-ci.json
 
 rm /tmp/minimalcove-ci.json
 ```

@@ -20,7 +20,7 @@ flutter doctor
 ## Get the source
 
 ```bash
-git clone https://github.com/shipblueprint/minimalcove-app.git
+git clone https://github.com/shipschematic/minimalcove-app.git
 cd minimalcove-app
 flutter pub get
 ```

@@ -33,5 +33,5 @@ Minimal Cove is a Flutter productivity app combining Kanban boards and the Eisen
 
 ## Source
 
-- Repository: [shipblueprint/minimalcove-app](https://github.com/shipblueprint/minimalcove-app)
+- Repository: [shipschematic/minimalcove-app](https://github.com/shipschematic/minimalcove-app)
 - Main README: [`../README.md`](../README.md)

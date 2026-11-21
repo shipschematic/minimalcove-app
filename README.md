@@ -38,7 +38,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/shipblueprint/minimalcove-app.git
+git clone https://github.com/shipschematic/minimalcove-app.git
 cd minimalcove-app
 
 # Install dependencies
@@ -70,7 +70,7 @@ flutter build linux --release
 
 ### Windows
 
-Pre-built Windows releases are available on the [Releases page](https://github.com/shipblueprint/minimalcove-app/releases).
+Pre-built Windows releases are available on the [Releases page](https://github.com/shipschematic/minimalcove-app/releases).
 
 Download the latest `MinimalCove-windows-x64.zip`, extract it anywhere, and run `MinimalCove.exe`.
 
@@ -84,7 +84,7 @@ flutter build windows --release
 
 ### Linux
 
-Download the latest `MinimalCove-linux-x64.tar.gz` from the [Releases page](https://github.com/shipblueprint/minimalcove-app/releases), extract it, and run the `MinimalCove` binary inside:
+Download the latest `MinimalCove-linux-x64.tar.gz` from the [Releases page](https://github.com/shipschematic/minimalcove-app/releases), extract it, and run the `MinimalCove` binary inside:
 
 ```bash
 tar xzf MinimalCove-linux-x64.tar.gz
@@ -204,5 +204,5 @@ and licensed separately, not open source. See [`LICENSE`](LICENSE) for the full 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by <a href="https://github.com/shipblueprint">shipblueprint</a></sub>
+  <sub>Built with ❤️ by <a href="https://github.com/shipschematic">shipschematic</a></sub>
 </div>
