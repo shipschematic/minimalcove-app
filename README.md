@@ -200,8 +200,4 @@ flutter doctor   # "Linux toolchain" must be green
 
 Minimal Cove is released under the [MIT License](LICENSE).
 
----
 
-<div align="center">
-  <sub>Built with ❤️ by <a href="https://github.com/shipschematic">shipschematic</a></sub>
-</div>
